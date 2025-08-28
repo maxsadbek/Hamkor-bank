@@ -16,21 +16,21 @@ body {
   margin: 0 auto;
 }
 
-html.dark {
+body.dark {
   background: #000;
   color: #000;
 }
 
-html.dark a {
+body.dark a {
   color: #0af;
 }
 
-html.sun {
+body.sun {
   background: #ddd;
   color: #000;
 }
 
-html.sun a {
+body.sun a {
   color: #0af;
 }
 
@@ -222,6 +222,7 @@ header .menu_box #moonSumBtn .sun {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  position: relative;
   z-index: -1;
   border-top: 37px solid #e2e2e2;
   border-left: 150px solid transparent;
@@ -229,7 +230,7 @@ header .menu_box #moonSumBtn .sun {
 .navbar_div p {
   margin-top: -2.4rem;
 }
-.navbar_div p:active2 {
+.navbar_div p:active {
   color: #fff;
 }
 

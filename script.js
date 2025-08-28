@@ -6,18 +6,14 @@ let menuBtn = document.querySelector("#menuBtn i");
 let menuBox = document.querySelector(".menu_box");
 let moonBtn = document.querySelector(".moon")
 let sunBtn = document.querySelector(".sun")
+const btn = document.querySelector("#moonSumBtn");
 
-moonBtn.addEventListener("click", function () {
-    document.html.classList.add("dark")
-    document.html.classList.remove("sun")
+btn.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
+    document.documentElement.classList.toggle("sun");
+});
 
-})
 
-sunBtn.addEventListener("click", function () {
-    document.html.classList.add("sun")
-    document.html.classList.remove("dark")
-
-})
 
 menuBtn.addEventListener("click", function () {
     menuBox.classList.toggle("active");
