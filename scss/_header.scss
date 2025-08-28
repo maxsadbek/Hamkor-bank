@@ -249,13 +249,23 @@ header {
       color: #fff;
     }
   }
-  .hero_menu {
-    ul {
-      display: flex;
+}
+.hero_menu {
+  ul {
+    margin-top: -1.5rem;
+    display: flex;
+    justify-content: space-around;
+    z-index: -2;
+    position: relative;
+    li {
+      transition: all 0.1s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        color: #007aff;
+      }
     }
   }
 }
-
 i {
   cursor: pointer;
 }

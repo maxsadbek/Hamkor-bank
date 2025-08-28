@@ -237,8 +237,20 @@ header .menu_box #moonSumBtn .sun {
 .navbar_div p:active {
   color: #fff;
 }
-.navbar_div .hero_menu ul {
+
+.hero_menu ul {
+  margin-top: -1.5rem;
   display: flex;
+  justify-content: space-around;
+  z-index: -2;
+  position: relative;
+}
+.hero_menu ul li {
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.hero_menu ul li:hover {
+  color: #007aff;
 }
 
 i {
