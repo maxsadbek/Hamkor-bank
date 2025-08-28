@@ -226,12 +226,19 @@ header .menu_box #moonSumBtn .sun {
   z-index: -1;
   border-top: 37px solid #e2e2e2;
   border-left: 150px solid transparent;
+  cursor: pointer;
 }
 .navbar_div p {
   margin-top: -2.4rem;
 }
+.navbar_div p:hover {
+  color: #007aff;
+}
 .navbar_div p:active {
   color: #fff;
+}
+.navbar_div .hero_menu ul {
+  display: flex;
 }
 
 i {

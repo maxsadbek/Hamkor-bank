@@ -237,12 +237,21 @@ header {
   z-index: -1;
   border-top: 37px solid #e2e2e2;
   border-left: 150px solid transparent;
+  cursor: pointer;
 
   p {
     margin-top: -2.4rem;
+    &:hover {
+      color: #007aff;
+    }
 
     &:active {
       color: #fff;
+    }
+  }
+  .hero_menu {
+    ul {
+      display: flex;
     }
   }
 }
