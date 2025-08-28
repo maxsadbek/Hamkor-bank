@@ -28,14 +28,12 @@ pBtn.addEventListener("click", function () {
     dropdownBtn.classList.toggle("active");
 });
 
-// search
 searchInput.addEventListener("click", function () {
     searchBtn.classList.toggle("active");
 });
 
 
 
-// tugmalar
 const uzBtn = document.getElementById('uz');
 const ruBtn = document.getElementById('ru');
 const currentLangEl = document.getElementById('p');
