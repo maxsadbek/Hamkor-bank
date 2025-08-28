@@ -1,14 +1,17 @@
 header {
   .navbar {
+    margin-top: 5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 5rem;
+    gap: 1rem;
     background-color: #fff;
     padding: 10px;
+    border-radius: 5px;
     ul {
       display: flex;
       gap: 2px;
+      margin-right: 10rem;
       li {
         list-style: none;
         a {
@@ -18,11 +21,56 @@ header {
           transition: all 0.3s ease;
           padding: 20px;
           border-right: 1px solid rgba(128, 128, 128, 0.33);
-          &:hover{
-            color: rgb(0, 81, 255);
+          font-size: 14px;
+          &:hover {
+            color: #007aff;
           }
         }
       }
+    }
+    .language {
+      margin-top: 5rem;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      right: 8%;
+      width: 110px;
+      p {
+        margin-top: 0.6rem;
+        padding: 10px;
+      }
+      #p {
+        margin-top: 3px;
+        font-size: 15px;
+        background-color: #dddddd00;
+
+    }
+      .p {
+        margin-top: 0.4rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        background-color: #dddddd76;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 1px;
+        cursor: pointer;
+        i{
+            margin-top: 4px;
+            font-size: 20px;
+            margin-right: -10px;
+        }
+      }
+      #dropdown{
+        display: none;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin-top: -2.65px;
+        height: 100px;
+        width: 115px;
+        background-color: #fff;
+        cursor: pointer;
+    }
     }
   }
 }
