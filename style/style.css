@@ -259,4 +259,8 @@ i {
   cursor: pointer;
 }
 
+main .hero {
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map */
