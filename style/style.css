@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +7,30 @@
 
 body {
   background-color: #ddd;
+  font-family: "Inter", monospace;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+header .navbar ul {
+  display: flex;
+  gap: 2rem;
+}
+header .navbar ul li {
+  list-style: none;
+}
+header .navbar ul li a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

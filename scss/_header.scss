@@ -1,0 +1,18 @@
+header {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    ul {
+      display: flex;
+      gap: 2rem;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
