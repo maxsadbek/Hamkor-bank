@@ -21,16 +21,26 @@ header .navbar {
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  background-color: #fff;
+  padding: 10px;
 }
 header .navbar ul {
   display: flex;
-  gap: 2rem;
+  gap: 2px;
 }
 header .navbar ul li {
   list-style: none;
 }
 header .navbar ul li a {
   text-decoration: none;
+  color: #000;
+  font-weight: 800;
+  transition: all 0.3s ease;
+  padding: 20px;
+  border-right: 1px solid rgba(128, 128, 128, 0.33);
+}
+header .navbar ul li a:hover {
+  color: rgb(0, 81, 255);
 }
 
 /*# sourceMappingURL=style.css.map */
