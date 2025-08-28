@@ -179,12 +179,13 @@ header {
   }
 
   .menu_box {
+    margin-top: -3.5rem;
     background-color: #f4f4f4;
     display: flex;
     padding: 40px 20px;
     justify-content: space-between;
     border-radius: 10px;
-
+    z-index: 11111;
     opacity: 0;
     max-height: 0;
     overflow: hidden;
@@ -208,6 +209,7 @@ header {
       opacity: 1;
       max-height: 500px;
       pointer-events: auto;
+      z-index: 1111;
     }
     #moonSumBtn {
       margin-top: 10px;
@@ -222,6 +224,23 @@ header {
       .sun {
         color: rgb(57, 57, 4);
       }
+    }
+  }
+}
+
+.navbar_div {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  z-index: -1;
+  border-top: 37px solid #e2e2e2;
+  border-left: 150px solid transparent;
+  p{
+    margin-top: -2.4rem;
+
+    &:active2{
+      color: #fff;
     }
   }
 }
