@@ -66,6 +66,8 @@ header .navbar .menu .language #p {
   margin-top: 3px;
   font-size: 15px;
   background-color: rgba(221, 221, 221, 0);
+  padding: 14px;
+  margin-right: -5px;
 }
 header .navbar .menu .language .p {
   margin-top: 0.4rem;
@@ -92,6 +94,11 @@ header .navbar .menu .language #dropdown {
   width: 115px;
   background-color: #fff;
   cursor: pointer;
+  display: block;
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
 header .navbar .menu .search-box {
   position: relative;
@@ -127,6 +134,22 @@ header .navbar .menu #menu i {
 }
 header .navbar .menu #dropdown.active {
   display: inline;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+header .navbar .menu #dropdown.active p {
+  background-color: #fff;
+  margin-top: -5px;
+  transition: all 0.3s ease-in-out;
+}
+header .navbar .menu #dropdown.active p:hover {
+  transform: scale(1.005);
+  background-color: #f4f4f4;
+}
+header .navbar .menu #dropdown.active .english {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

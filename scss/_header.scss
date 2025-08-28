@@ -46,6 +46,8 @@ header {
           margin-top: 3px;
           font-size: 15px;
           background-color: #dddddd00;
+          padding: 14px;
+          margin-right: -5px;
         }
         .p {
           margin-top: 0.4rem;
@@ -72,6 +74,12 @@ header {
           width: 115px;
           background-color: #fff;
           cursor: pointer;
+          display: block;
+          opacity: 0;
+          transform: translateY(-20px);
+          pointer-events: none;
+          transition: all 0.3s ease;
+
         }
       }
       .search-box {
@@ -113,6 +121,23 @@ header {
       }
       #dropdown.active {
         display: inline;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+
+        p {
+          background-color: #fff;
+          margin-top: -5px;
+          transition: all 0.3s ease-in-out;
+          &:hover{
+            transform: scale(1.005);
+            background-color: #f4f4f4;
+          }
+        }
+        .english {
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
       }
     }
   }
