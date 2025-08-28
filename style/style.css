@@ -58,7 +58,7 @@ header .navbar ul li a {
   font-weight: 800;
   transition: all 0.3s ease;
   padding: 20px;
-  border-right: 1px solid rgba(128, 128, 128, 0.33);
+  border-right: 1px solid rgba(128, 128, 128, 0.219);
   font-size: 13px;
 }
 header .navbar ul li a:hover {
@@ -241,7 +241,7 @@ header .menu_box #moonSumBtn .sun {
 .hero_menu ul {
   margin-top: -1.5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   z-index: -2;
   position: relative;
   border-bottom: 1px solid rgba(70, 70, 70, 0.2352941176);
