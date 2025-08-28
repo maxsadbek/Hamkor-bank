@@ -2,28 +2,34 @@ let searchBtn = document.querySelector(".search-box");
 let searchInput = document.querySelector("#search");
 let pBtn = document.querySelector(".p");
 let dropdownBtn = document.querySelector("#dropdown");
-let menuBtn = document.querySelector("#menuBtn");
+let menuBtn = document.querySelector("#menuBtn i");
 let menuBox = document.querySelector(".menu_box");
-let closeBtn = document.querySelector("#closeBtn")
 let moonBtn = document.querySelector(".moon")
 let sunBtn = document.querySelector(".sun")
 
 moonBtn.addEventListener("click", function () {
-    document.body.classList.add("dark")
-    document.body.classList.remove("sun")
+    document.html.classList.add("dark")
+    document.html.classList.remove("sun")
 
 })
 
 sunBtn.addEventListener("click", function () {
-    document.body.classList.add("sun")
-    document.body.classList.remove("dark")
+    document.html.classList.add("sun")
+    document.html.classList.remove("dark")
 
 })
 
 menuBtn.addEventListener("click", function () {
     menuBox.classList.toggle("active");
-});
 
+    if (menuBtn.classList.contains("ri-menu-line")) {
+        menuBtn.classList.remove("ri-menu-line");
+        menuBtn.classList.add("ri-close-line");
+    } else {
+        menuBtn.classList.remove("ri-close-line");
+        menuBtn.classList.add("ri-menu-line");
+    }
+});
 pBtn.addEventListener("click", function () {
     dropdownBtn.classList.toggle("active");
 });

@@ -16,21 +16,21 @@ body {
   margin: 0 auto;
 }
 
-body.dark {
+html.dark {
   background: #000;
   color: #000;
 }
 
-body.dark a {
+html.dark a {
   color: #0af;
 }
 
-body.sun {
+html.sun {
   background: #ddd;
   color: #000;
 }
 
-body.sun a {
+html.sun a {
   color: #0af;
 }
 
