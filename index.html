@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O'zbekiston va jahon yangiliklari</title>
-    <!-- style css -->
+    <title data-uz="O'zbekiston va jahon yangiliklari" data-ru="Новости Узбекистана и мира">O'zbekiston va jahon
+        yangiliklari</title>
+    <!-- style css  -->
     <link rel="stylesheet" href="./style/style.css">
     <!-- remix icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
@@ -19,69 +20,78 @@
     <!-- header -->
     <header class="container">
         <nav class="navbar container">
-            <img src="./img/png/logo-light.svg" alt="">
+            <img src="./img/png/logo-light.svg" alt="" class="logo">
             <ul>
-                <li><a href="#"> O'zbekiston</a></li>
-                <li><a href="#">Jahon</a></li>
-                <li><a href="#">Iqtisodiy</a></li>
-                <li><a href="#">Jamiyat</a></li>
-                <li><a href="#">Sport</a></li>
-                <li><a href="#">Fan-texnika</a></li>
-                <li><a href="#">Nuqtayi nazar</a></li>
-                <li><a href="#">Audio</a></li>
+                <li><a href="#" data-uz="O'zbekiston" data-ru="Узбекистан">O'zbekiston</a></li>
+                <li><a href="#" data-uz="Jahon" data-ru="Мир">Jahon</a></li>
+                <li><a href="#" data-uz="Iqtisodiy" data-ru="Экономика">Iqtisodiy</a></li>
+                <li><a href="#" data-uz="Jamiyat" data-ru="Общество">Jamiyat</a></li>
+                <li><a href="#" data-uz="Sport" data-ru="Спорт">Sport</a></li>
+                <li><a href="#" data-uz="Fan-texnika" data-ru="Наука и Техника">Fan-texnika</a></li>
+                <li><a href="#" data-uz="Nuqtayi nazar" data-ru="Точка зрения">Nuqtayi nazar</a></li>
+                <li><a href="#" data-uz="Audio" data-ru="Аудио">Audio</a></li>
             </ul>
             <div class="menu">
                 <div class="language">
                     <div class="p">
-                        <p id="p">O'zbekcha</p>
+                        <p id="p" data-uz="O'zbekcha" data-ru="Русский">O'zbekcha</p>
                         <i class="ri-global-line"></i>
                     </div>
                     <div id="dropdown">
-                        <p>Руский</p>
-                        <p class="english">English</p>
+                        <p id="uz" data-lang="uz">O'zbekcha</p>
+                        <p id="ru" data-lang="ru">Русский</p>
                     </div>
                 </div>
                 <div class="search-box">
                     <div id="search">
                         <i class="ri-search-line"></i>
                     </div>
-                    <input type="text" placeholder="Search" class="search-input">
+                    <input type="text" placeholder="Search" class="search-input" id="searchInput" data-uz="Qidirish"
+                        data-ru="Поиск">
                 </div>
                 <div id="menu">
                     <div id="menuBtn">
                         <i class="ri-menu-line"></i>
                     </div>
+                    <div id="closeBtn">
+                        <i class="ri-close-line"></i>
+                    </div>
                 </div>
         </nav>
+
         <div class="menu_box">
             <div>
-                <p>- Videolavhalar</p>
-                <p>- Fotolavhalar</p>
-                <p>- Dolzabr xabarlar</p>
-                <p>- Hayotiy hikoyalar</p>
+                <p data-uz="- Videolavhalar" data-ru="- Видеозаписи">- Videolavhalar</p>
+                <p data-uz="- Fotolavhalar" data-ru="- Фотографии">- Fotolavhalar</p>
+                <p data-uz="- Dolzabr xabarlar" data-ru="- Актуальные сообщения">- Dolzabr xabarlar</p>
+                <p data-uz="- Hayotiy hikoyalar" data-ru="- Жизненные истории">- Hayotiy hikoyalar</p>
             </div>
             <div>
-                <p>- Muharrir tanlovi</p>
-                <p>- Maqolalar</p>
-                <p>- Kun mavzulari</p>
-                <p>- Bizning jamoa</p>
+                <p data-uz="- Muharrir tanlovi" data-ru="- Выбор редактора">- Muharrir tanlovi</p>
+                <p data-uz="- Maqolalar" data-ru="- Статьи">- Maqolalar</p>
+                <p data-uz="- Kun mavzulari" data-ru="- Темы дня">- Kun mavzulari</p>
+                <p data-uz="- Bizning jamoa" data-ru="- Наша команда">- Bizning jamoa</p>
             </div>
             <div>
-                <p>- Reklama tariflari</p>
-                <p>- Media kit</p>
+                <p data-uz="- Reklama tariflari" data-ru="- Тарифы рекламы">- Reklama tariflari</p>
+                <p data-uz="- Media kit" data-ru="- Медиа-кит">- Media kit</p>
             </div>
             <img src="./img/png/business-bg.png" alt="this is menu img">
             <div>
-                <p>Qoʻshimcha funksionallar</p>
-                <div>
-                    <h3>Tungi ko‘rinish</h3>
-                    <i class="ri-sun-line"></i>
-                    <i class="ri-moon-line"></i>
+                <p data-uz="Qoʻshimcha funksionallar" data-ru="Дополнительные функции">Qoʻshimcha funksionallar</p>
+                <h3 data-uz="Tungi ko‘rinish" data-ru="Ночной режим">Tungi ko‘rinish</h3>
+                <div id="moonSumBtn">
+                    <i class="ri-sun-line sun"></i>
+                    <i class="ri-moon-line moon"></i>
                 </div>
             </div>
         </div>
         </div>
+        </div>
     </header>
+
+    <!-- boshqa sahifa kontenti ham shu uslubda data-uz/data-ru bilan to'ldirilishi mumkin -->
+
     <script src="./script.js"></script>
 </body>
 

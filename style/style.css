@@ -16,6 +16,24 @@ body {
   margin: 0 auto;
 }
 
+body.dark {
+  background: #000;
+  color: #fff;
+}
+
+body.dark a {
+  color: #0af;
+}
+
+body.sun {
+  background: #ddd;
+  color: #000;
+}
+
+body.sun a {
+  color: #0af;
+}
+
 header .navbar {
   margin-top: 5rem;
   display: flex;
@@ -41,7 +59,7 @@ header .navbar ul li a {
   transition: all 0.3s ease;
   padding: 20px;
   border-right: 1px solid rgba(128, 128, 128, 0.33);
-  font-size: 14px;
+  font-size: 13px;
 }
 header .navbar ul li a:hover {
   color: #007aff;
@@ -65,7 +83,7 @@ header .navbar .menu .language p {
 header .navbar .menu .language #p {
   margin-top: 3px;
   font-size: 15px;
-  background-color: rgba(221, 221, 221, 0);
+  background-color: transparent;
   padding: 14px;
   margin-right: -5px;
 }
@@ -86,7 +104,7 @@ header .navbar .menu .language .p i {
   margin-right: -14px;
 }
 header .navbar .menu .language #dropdown {
-  display: none;
+  display: block;
   margin-top: 13px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -94,17 +112,34 @@ header .navbar .menu .language #dropdown {
   width: 115px;
   background-color: #fff;
   cursor: pointer;
-  display: block;
   opacity: 0;
   transform: translateY(-20px);
   pointer-events: none;
   transition: all 0.3s ease;
 }
+header .navbar .menu .language #dropdown.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+header .navbar .menu .language #dropdown.active p {
+  background-color: #fff;
+  margin-top: -5px;
+  transition: all 0.3s ease-in-out;
+}
+header .navbar .menu .language #dropdown.active p:hover {
+  transform: scale(1.005);
+  background-color: #f4f4f4;
+}
+header .navbar .menu .language #dropdown.active .english {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 header .navbar .menu .search-box {
   position: relative;
   display: inline-block;
 }
-header .navbar .menu #search {
+header .navbar .menu .search-box #search {
   margin-right: 2rem;
   font-size: 20px;
   background-color: rgba(221, 221, 221, 0.462745098);
@@ -113,9 +148,9 @@ header .navbar .menu #search {
   font-weight: 200;
   cursor: pointer;
 }
-header .navbar .menu .search-input {
+header .navbar .menu .search-box .search-input {
   position: absolute;
-  right: 80px;
+  right: 90px;
   top: 50%;
   transform: translateY(-50%);
   width: 0;
@@ -126,30 +161,15 @@ header .navbar .menu .search-input {
   transition: all 0.3s ease;
 }
 header .navbar .menu .search-box.active .search-input {
-  width: 180px;
+  width: 280px;
   opacity: 1;
 }
 header .navbar .menu #menu i {
   font-size: 20px;
 }
-header .navbar .menu #dropdown.active {
-  display: inline;
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-header .navbar .menu #dropdown.active p {
-  background-color: #fff;
-  margin-top: -5px;
-  transition: all 0.3s ease-in-out;
-}
-header .navbar .menu #dropdown.active p:hover {
-  transform: scale(1.005);
-  background-color: #f4f4f4;
-}
-header .navbar .menu #dropdown.active .english {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+header .navbar #closeBtn i {
+  font-size: 20px;
+  display: none;
 }
 header .menu_box {
   background-color: #f4f4f4;
@@ -157,7 +177,11 @@ header .menu_box {
   padding: 40px 20px;
   justify-content: space-between;
   border-radius: 10px;
-  display: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
 header .menu_box p {
   color: rgb(3, 3, 77);
@@ -170,11 +194,24 @@ header .menu_box p {
 header .menu_box p:hover {
   color: rgb(3, 3, 187);
 }
-header .manu_box.active {
-  display: inline;
+header .menu_box.active {
   opacity: 1;
-  transform: translateY(0);
+  max-height: 500px;
   pointer-events: auto;
+}
+header .menu_box #moonSumBtn {
+  margin-top: 10px;
+  display: flex;
+  gap: 13px;
+  border: 1px solid #000;
+  width: 70px;
+  border-radius: 30px;
+  margin-left: 12rem;
+  font-size: 20px;
+  padding: 5px;
+}
+header .menu_box #moonSumBtn .sun {
+  color: rgb(57, 57, 4);
 }
 
 i {
