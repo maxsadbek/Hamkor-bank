@@ -151,6 +151,31 @@ header .navbar .menu #dropdown.active .english {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+header .menu_box {
+  background-color: #f4f4f4;
+  display: flex;
+  padding: 40px 20px;
+  justify-content: space-between;
+  border-radius: 10px;
+  display: none;
+}
+header .menu_box p {
+  color: rgb(3, 3, 77);
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out;
+}
+header .menu_box p:hover {
+  color: rgb(3, 3, 187);
+}
+header .manu_box.active {
+  display: inline;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 
 i {
   cursor: pointer;
