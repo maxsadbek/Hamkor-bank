@@ -152,4 +152,8 @@ header .navbar .menu #dropdown.active .english {
   border-bottom-right-radius: 10px;
 }
 
+i {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
