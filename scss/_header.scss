@@ -257,6 +257,8 @@ header {
     justify-content: space-around;
     z-index: -2;
     position: relative;
+    border-bottom: 1px solid #4646463c;
+    padding: 16px;
     li {
       transition: all 0.1s ease-in-out;
       cursor: pointer;

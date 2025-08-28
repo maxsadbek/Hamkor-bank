@@ -244,6 +244,8 @@ header .menu_box #moonSumBtn .sun {
   justify-content: space-around;
   z-index: -2;
   position: relative;
+  border-bottom: 1px solid rgba(70, 70, 70, 0.2352941176);
+  padding: 16px;
 }
 .hero_menu ul li {
   transition: all 0.1s ease-in-out;
