@@ -241,27 +241,14 @@ i {
   cursor: pointer;
 }
 
+a {
+  cursor: pointer;
+}
+
 main .hero {
   margin-top: 3rem;
   display: flex;
   align-items: center;
-}
-main .hero .hero_box {
-  width: 520px;
-  margin-right: 1rem;
-}
-main .hero .hero_box p {
-  margin-top: 1rem;
-  word-wrap: break-word;
-  font-size: 19px;
-  line-height: 1.5;
-}
-main .hero .hero_box h1 {
-  width: 90%;
-  font-size: 30px;
-}
-main .hero img {
-  width: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */
