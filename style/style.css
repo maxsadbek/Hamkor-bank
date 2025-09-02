@@ -40,7 +40,7 @@ header .navbar ul li a {
   font-weight: 800;
   transition: all 0.3s ease;
   padding: 20px;
-  border-right: 1px solid rgba(128, 128, 128, 0.219);
+  border-right: 1px solid rgba(128, 128, 128, 0.08);
   font-size: 13px;
 }
 header .navbar ul li a:hover {
@@ -246,38 +246,64 @@ a {
 }
 
 main .hero {
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
 }
 main .hero .parent {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(11, 1fr);
   gap: 8px;
 }
 main .hero .div1 {
   grid-column: span 6/span 6;
   grid-row: span 3/span 3;
   display: flex;
-  align-items: center;
+  margin-right: 2rem;
 }
 main .hero .div1 > div h2 {
+  margin-top: 2rem;
   font-size: 25px;
   font-weight: 800;
 }
+main .hero .div1 > div h2 a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+main .hero .div1 > div h2 a:hover {
+  color: rgb(3, 3, 187);
+}
 main .hero .div1 > div p {
   margin-top: 1.5rem;
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 19.08px;
+  line-height: 1.6;
 }
 main .hero .div1 img {
-  width: 530px;
+  width: 550px;
 }
 main .hero .div2 {
   grid-column: span 2/span 2;
   grid-row: span 12/span 12;
   grid-column-start: 7;
+  margin-top: 1rem;
+}
+main .hero .div2 .div2_text p {
+  margin-top: 10px;
+}
+main .hero .div2 .div2_text p a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+main .hero .div2 .div2_text p a:hover {
+  color: rgb(3, 3, 187);
+}
+main .hero .div2 .div2_text h5 {
+  margin-top: 0.5rem;
+  color: #777;
 }
 main .hero .div3 {
   grid-column: span 4/span 4;

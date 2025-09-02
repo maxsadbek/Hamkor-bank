@@ -1,13 +1,13 @@
 main {
   .hero {
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
 
     .parent {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(12, 1fr);
+      grid-template-rows: repeat(11, 1fr);
       gap: 8px;
     }
 
@@ -15,27 +15,55 @@ main {
       grid-column: span 6 / span 6;
       grid-row: span 3 / span 3;
       display: flex;
-      align-items: center;
-      >div{
-        h2{
-            font-size: 25px;
-            font-weight: 800;
+      margin-right: 2rem;
+      > div {
+        h2 {
+          margin-top: 2rem;
+          font-size: 25px;
+          font-weight: 800;
+          a {
+            color: #000;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+              color: rgb(3, 3, 187);
+            }
+          }
         }
-        p{
-            margin-top: 1.5rem;
-            font-size: 18px;
-            line-height: 1.4;
+        p {
+          margin-top: 1.5rem;
+          font-size: 19.08px;
+          line-height: 1.6;
         }
-    }
-    img{
-        width: 530px;
-    }
+      }
+      img {
+        width: 550px;
+      }
     }
 
     .div2 {
       grid-column: span 2 / span 2;
       grid-row: span 12 / span 12;
       grid-column-start: 7;
+      margin-top: 1rem;
+      .div2_text {
+        p {
+          margin-top: 10px;
+          a {
+            text-decoration: none;
+            font-size: 17px;
+            color: #000;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                color: rgb(3, 3, 187);
+            }
+          }
+        }
+        h5{
+            margin-top: 0.5rem;
+            color: #777;
+        }
+      }
     }
 
     .div3 {
