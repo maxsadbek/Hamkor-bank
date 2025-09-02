@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgba(227, 227, 227, 0.7294117647);
+  background: linear-gradient(to bottom, #e3e3e3, #fff);
   font-family: "Inter", monospace;
 }
 
@@ -40,7 +40,7 @@ header .navbar ul li a {
   font-weight: 800;
   transition: all 0.3s ease;
   padding: 20px;
-  border-right: 1px solid rgba(128, 128, 128, 0.08);
+  border-right: 1px solid rgba(128, 128, 128, 0.113);
   font-size: 13px;
 }
 header .navbar ul li a:hover {
@@ -253,7 +253,7 @@ main .hero {
 main .hero .parent {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(11, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   gap: 8px;
 }
 main .hero .div1 {
@@ -306,9 +306,17 @@ main .hero .div2 .div2_text h5 {
   color: #777;
 }
 main .hero .div3 {
+  margin-top: 4rem;
   grid-column: span 4/span 4;
   grid-row: span 9/span 9;
   grid-row-start: 4;
+}
+main .hero .div3 .div3_box {
+  margin-top: 1rem;
+  display: flex;
+}
+main .hero .div3 .div3_box img {
+  width: 250px;
 }
 main .hero .div4 {
   grid-column: span 2/span 2;

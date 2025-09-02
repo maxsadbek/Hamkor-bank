@@ -7,7 +7,7 @@ main {
     .parent {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(11, 1fr);
+      grid-template-rows: repeat(10, 1fr);
       gap: 8px;
     }
 
@@ -67,9 +67,17 @@ main {
     }
 
     .div3 {
+        margin-top: 4rem;
       grid-column: span 4 / span 4;
       grid-row: span 9 / span 9;
       grid-row-start: 4;
+      .div3_box{
+        margin-top: 1rem;
+        display: flex;
+        img{
+            width: 250px;
+        }
+      }
     }
 
     .div4 {
