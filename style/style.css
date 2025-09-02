@@ -261,6 +261,7 @@ main .hero .div1 {
   grid-row: span 3/span 3;
   display: flex;
   margin-right: 2rem;
+  cursor: pointer;
 }
 main .hero .div1 > div h2 {
   margin-top: 2rem;
@@ -288,6 +289,7 @@ main .hero .div2 {
   grid-row: span 12/span 12;
   grid-column-start: 7;
   margin-top: 1rem;
+  cursor: pointer;
 }
 main .hero .div2 .div2_text p {
   margin-top: 10px;
@@ -306,23 +308,66 @@ main .hero .div2 .div2_text h5 {
   color: #777;
 }
 main .hero .div3 {
-  margin-top: 4rem;
   grid-column: span 4/span 4;
   grid-row: span 9/span 9;
   grid-row-start: 4;
+  width: 650px;
+}
+main .hero .div3 .div3_big_box {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
 }
 main .hero .div3 .div3_box {
-  margin-top: 1rem;
+  margin-top: -1.3rem;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 main .hero .div3 .div3_box img {
-  width: 250px;
+  width: 220px;
+}
+main .hero .div3 .div3_box h2 {
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main .hero .div3 .div3_box h2 a {
+  text-decoration: none;
+  color: #000;
+}
+main .hero .div3 .div3_box h2 a:hover {
+  color: rgb(3, 3, 187);
 }
 main .hero .div4 {
   grid-column: span 2/span 2;
   grid-row: span 9/span 9;
   grid-column-start: 5;
   grid-row-start: 4;
+  margin-right: 2rem;
+}
+main .hero .div4 .div4_mini_box {
+  transition: all 0.3s ease-in-out;
+  margin-top: 2rem;
+  padding: 20px;
+  background-color: #e2f1f6;
+}
+main .hero .div4 .div4_mini_box > div {
+  display: flex;
+  align-items: center;
+}
+main .hero .div4 .div4_mini_box > div i {
+  border-radius: 100%;
+  color: #fff;
+  padding: 2px;
+  background-color: rgb(3, 3, 187);
+}
+main .hero .div4 .div4_mini_box:hover {
+  margin-top: 1rem;
+  transform: translateX(-8px);
+  -webkit-box-shadow: 7px 9px 0px 1px rgba(115, 196, 241, 0.42);
+  -moz-box-shadow: 7px 9px 0px 1px rgba(115, 196, 241, 0.42);
+  box-shadow: 7px 9px 0px 1px rgba(115, 196, 241, 0.42);
 }
 
 /*# sourceMappingURL=style.css.map */
