@@ -66,6 +66,40 @@ main {
           color: #777;
         }
       }
+      button {
+        margin-top: 1rem;
+        width: 10em;
+        height: 3em;
+        font-size: 15px;
+        font-family: inherit;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        color: #b2adad;
+        background-color: transparent;
+        border: 1px solid #f4f4f4;
+        border-radius: 20px;
+        border-left: 2px solid #0f1cd8;
+      }
+
+      button::before {
+        content: "";
+        width: 0;
+        height: 3em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #0f1cd8 0%, #477cf9 100%);
+        transition: 0.5s ease;
+        display: block;
+        z-index: -1;
+      }
+
+      button:hover::before {
+        width: 10em;
+        border-left: 0px;
+      }
     }
 
     .div3 {
