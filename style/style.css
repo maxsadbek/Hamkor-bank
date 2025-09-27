@@ -166,6 +166,8 @@ header .menu_box {
   overflow: hidden;
   pointer-events: none;
   transition: all 0.3s ease;
+  position: absolute;
+  width: 92.3%;
 }
 header .menu_box p {
   color: rgb(3, 3, 77);
@@ -350,6 +352,7 @@ main .hero .div4 .div4_mini_box {
   transition: all 0.2s ease-in-out;
   margin-top: 2rem;
   padding: 20px;
+  cursor: pointer;
   background-color: #e2f1f6;
 }
 main .hero .div4 .div4_mini_box > div {
@@ -369,11 +372,8 @@ main .hero .div4 .div4_mini_box > div i {
 main .hero .div4 .div4_mini_box > div p {
   color: #777;
 }
-main .hero .div4 .div4_mini_box:hover {
-  margin-top: 1rem;
-  transform: translateX(-8px);
-  -webkit-box-shadow: 7px 9px 0px 1px rgba(115, 196, 241, 0.42);
-  -moz-box-shadow: 7px 9px 0px 1px rgba(115, 196, 241, 0.42);
+main .hero .div4 .div4_mini_box:hover:hover {
+  transform: translate(-8px, -10px);
   box-shadow: 7px 9px 0px 1px rgba(115, 196, 241, 0.42);
 }
 main .hero .div4 .div4_mini_box h4 {
@@ -381,6 +381,82 @@ main .hero .div4 .div4_mini_box h4 {
   margin-bottom: 10px;
 }
 main .hero .div4 .div4_mini_box p {
+  font-size: 18px;
+}
+main .hero .div4 .div5_mini_box {
+  transition: all 0.2s ease-in-out;
+  margin-top: 2rem;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #e2f6eb;
+}
+main .hero .div4 .div5_mini_box > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+main .hero .div4 .div5_mini_box > div i {
+  border-radius: 50%;
+  color: #fff;
+  padding-top: 2px;
+  padding: 2px 3px;
+  background-color: rgb(3, 3, 187);
+  font-size: 10px;
+}
+main .hero .div4 .div5_mini_box > div p {
+  color: #777;
+}
+main .hero .div4 .div5_mini_box:hover {
+  transform: translate(-8px, -10px);
+  -webkit-box-shadow: 12px 9px 0px 1px #d0f4e0;
+  -moz-box-shadow: 12px 9px 0px 1px #d0f4e0;
+  box-shadow: 12px 9px 0px 1px #d0f4e0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+main .hero .div4 .div5_mini_box h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+main .hero .div4 .div5_mini_box p {
+  font-size: 18px;
+}
+main .hero .div4 .div6_mini_box {
+  transition: all 0.2s ease-in-out;
+  margin-top: 2rem;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #f6eee2;
+}
+main .hero .div4 .div6_mini_box > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+main .hero .div4 .div6_mini_box > div i {
+  border-radius: 50%;
+  color: #fff;
+  padding-top: 2px;
+  padding: 2px 3px;
+  background-color: rgb(3, 3, 187);
+  font-size: 10px;
+}
+main .hero .div4 .div6_mini_box > div p {
+  color: #777;
+}
+main .hero .div4 .div6_mini_box:hover {
+  transform: translate(-8px, -10px);
+  -webkit-box-shadow: 12px 9px 0px 1px #d0f4e0;
+  -moz-box-shadow: 12px 9px 0px 1px #d0f4e0;
+  box-shadow: 12px 9px 0px 1px #fde5bf;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+main .hero .div4 .div6_mini_box h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+main .hero .div4 .div6_mini_box p {
   font-size: 18px;
 }
 

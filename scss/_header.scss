@@ -175,6 +175,8 @@ header {
     overflow: hidden;
     pointer-events: none;
     transition: all 0.3s ease;
+    position: absolute;
+    width: 92.3%;
 
     p {
       color: rgb(3, 3, 77);
