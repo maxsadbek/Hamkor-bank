@@ -163,7 +163,7 @@ header {
   }
 
   .menu_box {
-    margin-top: -3.5rem;
+    margin-top: -4.5rem;
     background-color: #f4f4f4;
     display: flex;
     padding: 40px 20px;
@@ -174,7 +174,7 @@ header {
     max-height: 0;
     overflow: hidden;
     pointer-events: none;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     position: absolute;
     width: 92.3%;
 
@@ -221,9 +221,10 @@ header {
   gap: 2rem;
   position: relative;
   z-index: -1;
-  border-top: 37px solid #e2e2e2;
+  border-top: 37px solid #dad7d7;
   border-left: 150px solid transparent;
   cursor: pointer;
+  margin-bottom: 1rem;
 
   p{
     margin-top: -2.4rem;
