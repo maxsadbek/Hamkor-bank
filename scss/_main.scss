@@ -109,18 +109,25 @@ main {
       grid-row-start: 4;
       margin-right: 2rem;
       .div4_mini_box {
-          transition: all 0.3s ease-in-out;
+          transition: all 0.2s ease-in-out;
         margin-top: 2rem;
         padding: 20px;
         background-color: #e2f1f6;
         > div {
           display: flex;
           align-items: center;
+          gap: 10px;
+          margin-bottom: 10px;
           i{
-            border-radius: 100%;
+            border-radius: 50%;
             color: #fff;
-            padding: 2px;
+            padding-top: 2px;
+            padding: 2px 3px;
             background-color: rgb(3, 3, 187);
+            font-size: 10px;
+          }
+          p{
+            color: #777;
           }
         }
 
@@ -130,6 +137,13 @@ main {
           -webkit-box-shadow: 7px 9px 0px 1px rgba(115, 196, 241, 0.42);
           -moz-box-shadow: 7px 9px 0px 1px rgba(115, 196, 241, 0.42);
           box-shadow: 7px 9px 0px 1px rgba(115, 196, 241, 0.42);
+        }
+        h4{
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        p{
+          font-size: 18px;
         }
       }
     }
