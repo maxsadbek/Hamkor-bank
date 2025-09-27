@@ -1,5 +1,5 @@
 @use "./mixins" as *;
-@use "./variable"as *;
+@use "./variable" as *;
 main {
   .hero {
     margin-top: 2rem;
@@ -331,6 +331,39 @@ main {
           font-size: 18px;
         }
       }
+    }
+  }
+
+  .Messages {
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 8px;
+    }
+
+    .div5 {
+      grid-column: span 6 / span 6;
+      grid-row: span 6 / span 6;
+    }
+
+    .div6 {
+      grid-column: span 3 / span 3;
+      grid-row: span 6 / span 6;
+      grid-column-start: 7;
+    }
+
+    .div7 {
+      grid-column: span 3 / span 3;
+      grid-row: span 3 / span 3;
+      grid-column-start: 10;
+    }
+
+    .div8 {
+      grid-column: span 3 / span 3;
+      grid-row: span 3 / span 3;
+      grid-column-start: 10;
+      grid-row-start: 4;
     }
   }
 }
