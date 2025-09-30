@@ -655,6 +655,22 @@ main .Messages .div6 .a-img2 > div p {
 main .Messages .div6 .a-img2 h3 {
   color: #111;
   font-size: 18px;
+  margin-bottom: 16px;
+}
+main .Messages .div6 .a-img3 {
+  text-decoration: none;
+}
+main .Messages .div6 .a-img3 p {
+  margin-top: 1rem;
+  color: #777;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+main .Messages .div6 .a-img3 h3 {
+  color: #111;
+  font-size: 18px;
+  margin-bottom: 16px;
 }
 main .Messages .div7 {
   grid-column: span 3/span 3;
