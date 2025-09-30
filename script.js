@@ -13,8 +13,6 @@ btn.addEventListener("click", () => {
     document.documentElement.classList.toggle("sun");
 });
 
-
-
 menuBtn.addEventListener("click", function () {
     menuBox.classList.toggle("active");
 
@@ -26,6 +24,7 @@ menuBtn.addEventListener("click", function () {
         menuBtn.classList.add("ri-menu-line");
     }
 });
+
 pBtn.addEventListener("click", function () {
     dropdownBtn.classList.toggle("active");
 });
