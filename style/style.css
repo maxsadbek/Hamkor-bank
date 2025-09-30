@@ -614,20 +614,47 @@ main .Messages .div6 {
   grid-row: span 6/span 6;
   grid-column-start: 7;
 }
-main .Messages .div6 a {
+main .Messages .div6 .a-Img {
   text-decoration: none;
 }
-main .Messages .div6 a img {
+main .Messages .div6 .a-Img img {
   width: 330px;
 }
-main .Messages .div6 a h6 {
+main .Messages .div6 .a-Img h6 {
   margin-top: 5px;
   color: #777;
 }
-main .Messages .div6 a h3 {
+main .Messages .div6 .a-Img h3 {
   margin-top: 10px;
   font-size: 20px;
-  color: #444;
+  color: #111;
+}
+main .Messages .div6 .a-img2 {
+  text-decoration: none;
+}
+main .Messages .div6 .a-img2 > div {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+main .Messages .div6 .a-img2 > div i {
+  border-radius: 50%;
+  color: #fff;
+  padding-top: 2px;
+  padding: 2px 3px;
+  background-color: rgb(3, 3, 187);
+  font-size: 10px;
+}
+main .Messages .div6 .a-img2 > div p {
+  color: #777;
+  font-size: 10px;
+  font-weight: 700;
+}
+main .Messages .div6 .a-img2 h3 {
+  color: #111;
+  font-size: 18px;
 }
 main .Messages .div7 {
   grid-column: span 3/span 3;
