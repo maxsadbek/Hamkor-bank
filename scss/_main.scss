@@ -645,7 +645,7 @@ main {
     }
   }
   .grid-video {
-    .video-container{
+    .video-container {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -785,7 +785,7 @@ main {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate( -430%, 120%);
+            transform: translate(-430%, 120%);
             font-size: 40px;
             color: white;
             cursor: pointer;
@@ -797,22 +797,75 @@ main {
           }
         }
       }
-      .video-text{
+      .video-text {
         padding: 0 15px;
-        h2{
-          font-size:20px;
+        h2 {
+          font-size: 20px;
           margin-bottom: 16px;
-          transition: all .3s ease-in-out;
+          transition: all 0.3s ease-in-out;
         }
-        p{
+        p {
           color: #777;
           font-size: 12px;
           font-weight: 700;
         }
       }
-      &:hover{
-        h2{
+      &:hover {
+        h2 {
           color: rgb(0, 0, 174);
+        }
+      }
+    }
+  }
+  .maqolalar {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 15px;
+    .maqolalar-card {
+      width: 340px;
+      background-color: #dcdcdc;
+      cursor: pointer;
+
+      &:hover{
+        h3{
+          color: rgb(0, 0, 174);
+        }
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .maqolalar-card-child {
+        flex-direction: column;
+        padding: 5px 10px;
+        > div {
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 10px;
+
+          i {
+            border-radius: 50%;
+            color: #fff;
+            padding-top: 2px;
+            padding: 2px 3px;
+            background-color: rgb(3, 3, 187);
+            font-size: 10px;
+          }
+          p {
+            color: #777;
+            font-size: 12px;
+            font-weight: 700;
+          }
+        }
+        h3{
+          font-size: 23px;
+          transition: all 0.3s ease-in-out;
         }
       }
     }

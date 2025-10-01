@@ -994,5 +994,53 @@ main .grid-video .video-card .video-text p {
 main .grid-video .video-card:hover h2 {
   color: rgb(0, 0, 174);
 }
+main .maqolalar {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 15px;
+}
+main .maqolalar .maqolalar-card {
+  width: 340px;
+  background-color: #dcdcdc;
+  cursor: pointer;
+}
+main .maqolalar .maqolalar-card:hover h3 {
+  color: rgb(0, 0, 174);
+}
+main .maqolalar .maqolalar-card img {
+  width: 100%;
+  object-fit: cover;
+}
+main .maqolalar .maqolalar-card .maqolalar-card-child {
+  flex-direction: column;
+  padding: 5px 10px;
+}
+main .maqolalar .maqolalar-card .maqolalar-card-child > div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+main .maqolalar .maqolalar-card .maqolalar-card-child > div i {
+  border-radius: 50%;
+  color: #fff;
+  padding-top: 2px;
+  padding: 2px 3px;
+  background-color: rgb(3, 3, 187);
+  font-size: 10px;
+}
+main .maqolalar .maqolalar-card .maqolalar-card-child > div p {
+  color: #777;
+  font-size: 12px;
+  font-weight: 700;
+}
+main .maqolalar .maqolalar-card .maqolalar-card-child h3 {
+  font-size: 23px;
+  transition: all 0.3s ease-in-out;
+}
 
 /*# sourceMappingURL=style.css.map */
