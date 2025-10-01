@@ -743,5 +743,208 @@ main .Messages .div8:hover h3 {
   color: rgb(2, 2, 245);
   line-height: 1.4;
 }
+main .Messages .div8 button {
+  margin-top: 1.3rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+main .Messages .div8 button.learn-more {
+  width: 9rem;
+  height: auto;
+}
+main .Messages .div8 button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  right: -1rem;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: rgb(10, 0, 115);
+  border-radius: 1.625rem;
+}
+main .Messages .div8 button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+main .Messages .div8 button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+main .Messages .div8 button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+main .Messages .div8 button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: blue;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+main .Messages .div8 button:hover .circle {
+  width: 100%;
+}
+main .Messages .div8 button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+main .Messages .div8 button:hover .button-text {
+  color: #fff;
+}
+@supports (display: grid) {
+  main .Messages .div8 body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: ". main main ." ". main main .";
+  }
+  main .Messages .div8 #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}
+main .grid-video .text-video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .grid-video .text-video button {
+  margin-top: 1.3rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+main .grid-video .text-video button.learn-more {
+  width: 9rem;
+  height: auto;
+}
+main .grid-video .text-video button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  right: 0rem;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: rgb(10, 0, 115);
+  border-radius: 1.625rem;
+}
+main .grid-video .text-video button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+main .grid-video .text-video button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+main .grid-video .text-video button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+main .grid-video .text-video button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  right: 10px;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: blue;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+main .grid-video .text-video button:hover .circle {
+  width: 100%;
+}
+main .grid-video .text-video button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+main .grid-video .text-video button:hover .button-text {
+  color: #fff;
+}
+@supports (display: grid) {
+  main .grid-video .text-video body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: ". main main ." ". main main .";
+  }
+  main .grid-video .text-video #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}
+main .grid-video .video-card {
+  background-color: #c2c1c1;
+  width: 350px;
+  border-radius: 20px;
+}
+main .grid-video .video-card .video-img {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
