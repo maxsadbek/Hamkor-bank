@@ -684,6 +684,7 @@ main .Messages .div7 {
   grid-column: span 3/span 3;
   grid-row: span 3/span 3;
   grid-column-start: 10;
+  cursor: pointer;
 }
 main .Messages .div7 img {
   width: 350px;
@@ -714,6 +715,32 @@ main .Messages .div8 {
   grid-row: span 3/span 3;
   grid-column-start: 10;
   grid-row-start: 4;
+  cursor: pointer;
+}
+main .Messages .div8 img {
+  width: 350px;
+  object-fit: cover;
+  height: 185px;
+}
+main .Messages .div8 p {
+  margin-top: 5px;
+  color: #777;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+main .Messages .div8 a {
+  text-decoration: none;
+}
+main .Messages .div8 a h3 {
+  color: #111;
+  line-height: 1.4;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+main .Messages .div8:hover h3 {
+  color: rgb(2, 2, 245);
+  line-height: 1.4;
 }
 
 /*# sourceMappingURL=style.css.map */
