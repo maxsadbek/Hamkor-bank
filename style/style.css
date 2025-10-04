@@ -1042,5 +1042,8 @@ main .maqolalar .maqolalar-card .maqolalar-card-child h3 {
   font-size: 23px;
   transition: all 0.3s ease-in-out;
 }
+main .maqolalar .img-maqola img {
+  height: 226px;
+}
 
 /*# sourceMappingURL=style.css.map */
